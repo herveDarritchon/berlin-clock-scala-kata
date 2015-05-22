@@ -11,7 +11,7 @@ class KataApplication extends LazyLogging {
 
   def main(args: Array[String]): Unit = {
     logger.debug("Kata starts here.")
-    BerlinClock.start ()
+    BerlinClock.start()
     logger.debug("Kata stops here.")
   }
 
