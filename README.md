@@ -1,32 +1,35 @@
 ## Synopsis
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+![image](http://agilekatas.co.uk/static/img/katas/kata_berlinclock.png)
 
-## Code Example
+The Berlin Clock (Mengenlehreclock or Berlin Uhr) is a clock that tells the time using a series of illuminated coloured blocks, as you can see in the picture for this project.
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+The top lamp blinks to show seconds- it is illuminated on even seconds and off on odd seconds.
+
+The next two rows represent hours. The upper row represents 5 hour blocks and is made up of 4 red lamps. The lower row represents 1 hour blocks and is also made up of 4 red lamps.
+
+The final two rows represent the minutes. The upper row represents 5 minute blocks, and is made up of 11 lamps- every third lamp is red, the rest are yellow. The bottom row represents 1 minute blocks, and is made up of 4 yellow lamps.
 
 ## Motivation
 
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+Doing kata is a good way to either enhance its skills in programming and to learn a language.
+It's why I have decided to do some kata to learn functional programming and Scala.
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+If you want to do the kata, you can clone the master branch to start the kata.
+    git clone -b master https://github.com/herveDarritchon/berlin-clock-scala-kata.git
 
 ## Tests
 
-Describe and show how to run the tests with code examples.
+I have done a branch for unitary test if you want.
+It's a good way to start, I have provided a branch with only the tests and you have to code the app.
+    git clone -b tdd https://github.com/herveDarritchon/berlin-clock-scala-kata.git
 
 ## Contributors
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Feel free to fork, pull request or what ever you want or need ;)
 
 ## License
 
-A short snippet describing the license (MIT, Apache, etc.)
-
+Licensed under the Apache License, Version 2.0 (the "License");
