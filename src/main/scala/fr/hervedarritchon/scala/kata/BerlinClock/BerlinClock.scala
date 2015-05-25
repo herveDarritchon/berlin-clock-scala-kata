@@ -5,6 +5,10 @@ package fr.hervedarritchon.scala.kata.berlinclock
  *
  */
 object BerlinClock {
+  def convert(time: _root_.codes.reactive.scalatime.LocalTime) = ???
+
+  def convert() = ???
+
 
   def start() = ???
 
