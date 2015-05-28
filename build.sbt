@@ -1,12 +1,10 @@
-name := """minimal-scala"""
+name := """scala-berlin-clock-kata"""
 
 version := "1.0"
 
 scalaVersion := "2.11.6"
 
-resolvers +=
-  "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
-
+resolvers += "Sonatype OSS Snapshots" at "https://oss.sonatype.org/content/repositories/snapshots"
 
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
