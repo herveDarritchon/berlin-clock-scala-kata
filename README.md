@@ -22,9 +22,12 @@ If you want to do the kata, you can clone the master branch to start the kata.
 
 ## Tests
 
-I have done a branch for unitary test if you want.
+I have done a branch for unitary test if you want. Test are not implemented. You just have the squeleton of the tests using FeatureSpec with Matchers and GivenWhenThen. 
 It's a good way to start, I have provided a branch with only the tests and you have to code the app.
     git clone -b tdd https://github.com/herveDarritchon/berlin-clock-scala-kata.git
+
+If you want, there is another branch with implemented Tests based on a String return Type for the Berlin Clock.
+    git clone -b tdd-string https://github.com/herveDarritchon/berlin-clock-scala-kata.git
 
 ## Contributors
 
