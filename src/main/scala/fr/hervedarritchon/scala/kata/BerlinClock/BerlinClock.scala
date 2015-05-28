@@ -6,8 +6,52 @@ package fr.hervedarritchon.scala.kata.berlinclock
  */
 object BerlinClock {
 
-  def convert(time: _root_.codes.reactive.scalatime.LocalTime) = ???
+  val time: Array[String] = new Array[String](5)
 
-  def start() = ???
+  def convert(time: codes.reactive.scalatime.LocalTime): Array[String] = {
+    this.time(0)= (time.getMinute % 5) match {
+      case 0 => "OOOO"
+      case 1 => "YOOO"
+      case 2 => "YYOO"
+      case 3 => "YYYO"
+      case 4 => "YYYY"
+    }
+    this.time(1)= (time.getMinute / 5 ) match {
+      case 0 => "OOOOOOOOOOO"
+      case 1 => "YOOOOOOOOOO"
+      case 2 => "YYOOOOOOOOO"
+      case 3 => "YYROOOOOOOO"
+      case 4 => "YYRYOOOOOOO"
+      case 5 => "YYRYYOOOOOO"
+      case 6 => "YYRYYROOOOO"
+      case 7 => "YYRYYRYOOOO"
+      case 8 => "YYRYYRYYOOO"
+      case 9 => "YYRYYRYYROO"
+      case 10 => "YYRYYRYYRYO"
+      case 11 => "YYRYYRYYRYY"
+    }
+    this.time(2)= (time.getHour % 5) match {
+      case 0 => "OOOO"
+      case 1 => "ROOO"
+      case 2 => "RROO"
+      case 3 => "RRRO"
+      case 4 => "RRRR"
+    }
+    this.time(3)= (time.getHour / 5) match {
+      case 0 => "OOOO"
+      case 1 => "ROOO"
+      case 2 => "RROO"
+      case 3 => "RRRO"
+      case 4 => "RRRR"
+    }
+    this.time(4)= (time.getSecond % 2) match {
+      case 0 => "O"
+      case 1 => "Y"
+    }
+    this.time
+  }
+
+  def start() = {
+  }
 
 }
