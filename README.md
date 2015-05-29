@@ -15,10 +15,16 @@ The final two rows represent the minutes. The upper row represents 5 minute bloc
 Doing kata is a good way to either enhance its skills in programming and to learn a language.
 It's why I have decided to do some kata to learn functional programming and Scala.
 
+## Synopsis
+
+I have tried to be more functional than the first try. I have based my solution on List.
+One of my inspiration is from https://gist.github.com/sortega/8502156
+I have looked at it and try to reproduce it in a less concise way because I'm not so good at functional programming.
+
 ## Installation
 
 If you want to do the kata, you can clone the master branch to start the kata.
-    git clone -b master https://github.com/herveDarritchon/berlin-clock-scala-kata.git
+    git clone -b try2 https://github.com/herveDarritchon/berlin-clock-scala-kata.git
 
 ## Tests
 
